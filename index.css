@@ -1,0 +1,277 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  /* border: 1px solid purple; */
+}
+
+:root {
+  --Pink: hsl(322, 100%, 66%);
+  --LightPink: hsl(321, 100%, 78%);
+  --LightRed: hsl(0, 100%, 63%);
+  --VeryPaleBlue: hsl(207, 100%, 98%);
+  --VeryDarkCyan: hsl(192, 100%, 9%);
+  --white: white;
+}
+
+body {
+  font-family: "Trebuchet MS";
+  margin: 0px;
+  padding: 0px;
+}
+
+/* 
+### Primary
+
+- Pink: hsl(322, 100%, 66%)
+- Light Pink: hsl(321, 100%, 78%)
+- Light Red: hsl(0, 100%, 63%)
+
+### Neutral
+
+- Very Dark Cyan: hsl(192, 100%, 9%)
+- Very Pale Blue: hsl(207, 100%, 98%)
+*/
+
+/* Header Styles */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 30px;
+  width: 100%;
+}
+
+button {
+  background-color: var(--Pink);
+  color: var(--white);
+  padding: 25px;
+  border-radius: 25px;
+  border: none;
+}
+
+button.try-it-button {
+  background-color: var(--white);
+  color: black;
+  border: 2px solid var(--Pink);
+  padding: 10px 30px;
+}
+
+/* Section styles */
+section {
+  width: 90%;
+  margin: 5rem auto;
+}
+
+.showcase,
+.showcase-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.showcase-text > * {
+  margin: 10px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.showcase-text > h1 {
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+
+.showcase-text > p {
+  font-size: 20px;
+  padding: 3rem;
+  width: 60%;
+}
+
+.showcase-text button {
+  width: 30%;
+}
+
+.showcase-image {
+  width: 80%;
+  margin: 10px auto;
+}
+.showcase-image img {
+  width: 100%;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+.stats h1 {
+  font-size: 4rem;
+}
+
+.illustrations {
+  width: 100%;
+}
+
+.wavy {
+  padding: 0;
+  background-color: var(--VeryPaleBlue);
+}
+
+.illustration-section {
+  width: 100%;
+  display: flex;
+  padding: 0px 8rem;
+}
+
+.illustration-section > * {
+  width: 50%;
+}
+
+.illustration-image img {
+  width: 100%;
+}
+
+.illustration-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: flex-start;
+}
+
+.illustration-text > * {
+  margin: 10px;
+}
+
+.illustration-text p {
+  width: 80%;
+}
+
+.illustration-text h1 {
+  font-weight: 900;
+}
+
+.wave-top {
+  margin: 0;
+  width: 100%;
+  position: relative;
+  top: 24px;
+}
+
+.wave-top img {
+  width: 100%;
+}
+
+.wave-bottom {
+  margin: 0;
+  width: 100%;
+  position: relative;
+  bottom: 20px;
+}
+
+.wave-bottom img {
+  width: 100%;
+}
+
+.get-started {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  margin: 10rem auto;
+}
+.get-started > * {
+  margin: 10px;
+  padding: 10px;
+}
+
+.get-started button {
+  width: 25%;
+  padding: 20px 15px;
+}
+
+.footer-wave-top {
+  margin: 0;
+  width: 100%;
+  position: relative;
+  top: 4px;
+}
+
+.footer-wave-top img {
+  width: 100%;
+}
+
+.footer-container {
+  margin: 0px auto;
+  background-color: var(--VeryDarkCyan);
+  color: var(--white);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px 5rem;
+}
+
+.footer-contact {
+  width: 30%;
+}
+.footer-newsletter {
+  width: 50%;
+  margin-right: -5rem;
+}
+
+.footer-logo {
+  margin: 20px 0;
+  padding: 10px;
+  color: white;
+  background-color: white;
+}
+
+.footer-contact p {
+  line-height: 1.5rem;
+  margin: 10px 0;
+}
+
+.phone,
+.email {
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
+  margin: 15px 0;
+}
+
+.phone p,
+.email p {
+  margin: 0 20px;
+}
+.email img,
+.phone img {
+  align-self: flex-end;
+}
+
+.footer-newsletter > * {
+  margin: 20px 0;
+}
+
+.newsletter-text > * {
+  margin: 20px 0;
+}
+
+.newsletter-text p {
+  width: 70%;
+  line-height: 1.4rem;
+}
+
+#email {
+  padding: 10px;
+  width: 50%;
+  margin-right: 20px;
+  border-radius: 6px;
+  outline: none;
+}
+
+.newsletter-form button {
+  padding: 13px 30px;
+  border-radius: 8px;
+}
+
+
