@@ -6,9 +6,12 @@
 }
 
 :root {
+  /* Primary colors */
   --Pink: hsl(322, 100%, 66%);
   --LightPink: hsl(321, 100%, 78%);
   --LightRed: hsl(0, 100%, 63%);
+
+  /* Neutral colors */
   --VeryPaleBlue: hsl(207, 100%, 98%);
   --VeryDarkCyan: hsl(192, 100%, 9%);
   --white: white;
@@ -20,18 +23,6 @@ body {
   padding: 0px;
 }
 
-/* 
-### Primary
-
-- Pink: hsl(322, 100%, 66%)
-- Light Pink: hsl(321, 100%, 78%)
-- Light Red: hsl(0, 100%, 63%)
-
-### Neutral
-
-- Very Dark Cyan: hsl(192, 100%, 9%)
-- Very Pale Blue: hsl(207, 100%, 98%)
-*/
 
 /* Header Styles */
 
@@ -40,19 +31,20 @@ header {
   justify-content: space-between;
   padding: 20px 30px;
   width: 100%;
+  margin-bottom: 9rem ;
 }
 
 button {
   background-color: var(--Pink);
   color: var(--white);
   padding: 25px;
-  border-radius: 25px;
+  border-radius: 50px;
   border: none;
 }
 
 button.try-it-button {
   background-color: var(--white);
-  color: black;
+  color: var(--Pink);
   border: 2px solid var(--Pink);
   padding: 10px 30px;
 }
@@ -71,30 +63,37 @@ section {
   align-content: center;
 }
 
+.showcase-text{
+  margin: 50px 0;
+}
+
 .showcase-text > * {
-  margin: 10px auto;
-  padding: 20px;
+  margin: 20px auto;
   text-align: center;
+  
 }
 
 .showcase-text > h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: 900;
+  margin: 0;
 }
 
 .showcase-text > p {
   font-size: 20px;
-  padding: 3rem;
-  width: 60%;
+  width: 45%;
 }
 
 .showcase-text button {
   width: 30%;
+  padding: 25px;
+  font-size: 1.2rem;
+  font-weight: 700;
 }
 
 .showcase-image {
-  width: 80%;
-  margin: 10px auto;
+  width: 70%;
+  margin: 30px auto;
 }
 .showcase-image img {
   width: 100%;
@@ -108,6 +107,10 @@ section {
 .stats h1 {
   font-size: 4rem;
 }
+.stats p{
+  color: grey;
+}
+
 
 .illustrations {
   width: 100%;
@@ -275,3 +278,29 @@ section {
 }
 
 
+@media (max-width:700px) {
+ header .logo img{
+  width: 70%;
+ }
+
+ .showcase {
+  padding: 20px;
+}
+.showcase-text > h1 {
+  font-size: 2.5rem;
+}
+
+.showcase-text > p {
+  width: 90%;
+}
+
+.showcase-text button{
+  width: 70%;
+  font-size: 1rem;
+}
+
+.stats {
+  flex-direction: column;
+}
+
+}
