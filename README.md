@@ -33,8 +33,10 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Frontend Mentor Solution URL: [Frontend Mentor Solution Page](https://www.frontendmentor.io/solutions/huddle-landing-page-with-curved-sections-PO_nQgRJYY)
+- Live Site URL: [Live Hosted Website](https://mharvel13.github.io/Huddle-Landing-Page-with-Curved-Section/)
+- Github Solution URL: [Github Hosted Codes](https://github.com/Mharvel13/Huddle-Landing-Page-with-Curved-Section)
+
 
 ## My process
 
@@ -43,7 +45,6 @@ Users should be able to:
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
 - CSS Media Queries
 
 
