@@ -6,9 +6,36 @@
   box-sizing: border-box;
 }
 
-  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
-  
-  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+/*  TABLE OF CONTENT
+
+    VARIABLES AND IMPORTS
+
+    1. GLOBAL STYLES
+
+    2. BUTTONS AND COMPONENTS
+      2.1 BUTTONS
+      2.2 JS CLASS TOGGLE STYLES
+
+    3 LAYOUT STYLES
+      3.1 HEADER STYLES
+      3.2 SHOWCASE STYLES
+      3.3 STATS SECTION STYLES
+      3.4 ILLUSTRATION STYLES
+      3.5 WAVES SECTION STYLES
+      3.6 CALL TO ACTION STYLES
+      3.7 FOOTER STYLES
+
+    4. MEDIA QUERIES AND SMALL SCREEN SIZE STYLES
+*/
+
+/* ==================
+     VARIABLES AND IMPORTS
+  ===================
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
 
 /* Variables */
 :root {
@@ -23,24 +50,25 @@
   --white: white;
 }
 
+/* ==================
+    1. GLOBAL STYLES
+  ===================
+*/
 body {
   font-family: "Trebuchet MS";
   margin: 0px;
   padding: 0px;
 }
 
-/* h1{
- font-family: 'Poppins', sans-serif;
-} */
-/* Header Styles */
+/* ============================
+   2. BUTTONS AND COMPONENTS
+  =============================
+*/
 
-header {
-  display: flex;
-  justify-content: space-between;
-  padding: 2rem;
-  width: 100%;
-  margin-bottom: 5rem;
-}
+/* ============================
+   2.1 BUTTONS
+  =============================
+*/
 
 button {
   background-color: var(--Pink);
@@ -50,7 +78,7 @@ button {
   border: none;
 }
 
-button:hover{
+button:hover {
   background-color: var(--LightPink);
   cursor: pointer;
 }
@@ -67,7 +95,70 @@ button.try-it-button:hover {
   color: var(--LightPink);
   border-color: var(--LightPink);
 }
-/* SHOWCASE SECTION STYLES */
+
+.showcase-text button {
+  width: 30%;
+  padding: 25px;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.get-started button {
+  width: 35%;
+  padding: 1.5rem 1rem;
+  font-size: 1.5rem;
+  margin: 15px;
+  box-shadow: 0px 5px 5px var(--VeryPaleBlue);
+}
+
+.newsletter-form button {
+  width: 35%;
+  padding: 1rem 0.7rem;
+  border-radius: 8px;
+  font-size: 1.3rem;
+  margin-left: 20px;
+}
+
+/* ====================================
+   2.2 JAVASCRIPT CLASS TOGGLE STYLES
+  ===================================
+*/
+
+.error {
+  border: 2px solid var(--LightRed);
+}
+
+.sucess {
+  border: 3px solid var(--LightPink);
+}
+
+#emailErrorText {
+  margin-top: 5px;
+  color: var(--LightRed);
+}
+
+/* =============
+3. LAYOUT AND SECTION STYLES
+==============
+*/
+
+/* ================
+   3.1 HEADER STYLES
+  ==================
+*/
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  width: 100%;
+  margin-bottom: 5rem;
+}
+
+/* ====================
+   3.2 SHOWCASE STYLES
+  =====================
+*/
 .showcase,
 .showcase-text {
   display: flex;
@@ -96,13 +187,6 @@ button.try-it-button:hover {
   width: 50%;
 }
 
-.showcase-text button {
-  width: 30%;
-  padding: 25px;
-  font-size: 1.2rem;
-  font-weight: 700;
-}
-
 .showcase-image {
   width: 70%;
   margin: 30px auto;
@@ -111,7 +195,10 @@ button.try-it-button:hover {
   width: 100%;
 }
 
-/* STATS STYLES */
+/* =============
+    3.3 STATS SECTION
+  ==============
+*/
 .stats {
   display: flex;
   justify-content: space-around;
@@ -134,7 +221,10 @@ button.try-it-button:hover {
   align-self: left;
 }
 
-/* ILLUSTRATION STYLES */
+/* ===========================
+    3.4  ILLUSTRATION STYLES
+  ============================
+*/
 
 .illustration-section {
   width: 100%;
@@ -172,7 +262,10 @@ button.try-it-button:hover {
   font-weight: 900;
 }
 
-/* WAVY STYLES  */
+/* ===========================
+    3.5 WAVES SECTION STYLES
+  ============================
+*/
 
 .wavy {
   background-color: var(--VeryPaleBlue);
@@ -204,14 +297,17 @@ button.try-it-button:hover {
   background-image: url("images/Wavy Images/bg-footer-top-desktop.svg");
 }
 
-/* CALL TO ACTION SECTION STYLES  */
+/* ===========================
+    3.6   CALL TO ACTION SECTION STYLES
+  ============================
+*/
 
 .get-started {
   display: flex;
   flex-direction: column;
   justify-items: center;
   align-items: center;
-  padding: 10rem ;
+  padding: 10rem;
 }
 
 .get-started h1 {
@@ -220,15 +316,10 @@ button.try-it-button:hover {
   margin: 20px;
 }
 
-.get-started button {
-  width: 35%;
-  padding: 1.5rem 1rem;
-  font-size: 1.5rem;
-  margin: 15px;
-  box-shadow: 0px 5px 5px var(--VeryPaleBlue);
-}
-
-/* FOOTER STYLES */
+/* ===========================
+    3.7  FOOTER STYLES
+  ============================
+*/
 
 footer {
   display: flex;
@@ -279,14 +370,14 @@ footer {
   margin: 5rem 0px;
 }
 
-.socials > *{
+.socials > * {
   margin: 10px;
 }
 
-i{
+i {
   font-size: 2.5rem;
 }
-i:hover{
+i:hover {
   cursor: pointer;
   color: blue;
 }
@@ -319,31 +410,12 @@ i:hover{
   outline: none;
 }
 
-.error{
-  border: 2px solid var(--LightRed);
-  
-}
+/* ===========================
+  4. MEDIA QUERIES AND SMALL SCREEN SIZE STYLES
+  ============================
+*/
 
-.sucess{
-  border: 3px solid var(--LightPink);
-}
-
-#emailErrorText{
-  margin-top: 5px;
-  color: var(--LightRed);
-}
-
-.newsletter-form button {
-  width: 35%;
-  padding: 1rem 0.7rem;
-  border-radius: 8px;
-  font-size: 1.3rem;
-  margin-left: 20px;
-}
-
-/* MEDIA QUERIES AND SMALL SCREEN SIZE STYLES */
-
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   /* HEADER AND SHOWCASE MOBILE STYLES */
   header .logo img {
     width: 70%;

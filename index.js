@@ -3,14 +3,12 @@ const form = document.getElementById("form");
 const email = document.getElementById("email");
 const emailErrorText = document.getElementById("emailErrorText");
 
-
 form.onsubmit = (e) => {
   e.preventDefault();
 
   if (email.value == "") {
     email.classList.add("error");
     emailErrorText.innerHTML = "Enter an email address";
-
   } else {
     checkEmail();
   }
@@ -29,13 +27,11 @@ form.onsubmit = (e) => {
       email.classList.remove("error");
       email.classList.add("sucess");
       emailErrorText.innerHTML = "";
-
     }
   }
 
-  if (!email.classList.contains('error')){
-    window.location.href = '#';
-    console.log("form Submitted!!!")
-
-}
+  if (!email.classList.contains("error")) {
+    window.location.href = "#";
+    console.log("form Submitted!!!");
+  }
 };
